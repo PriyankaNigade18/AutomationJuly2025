@@ -3,3 +3,14 @@ Assignment1:
 ===================
 Create Employee class with two details empid and empname
 and one method which displays details of 5 employee
+
+
+Assignment 2:(without return keyword)
+==================
+W.A.Java code where declare 5 methods and pass parameters and display result
+Create CalCulator1 class and declare add(),sub(),mul(),div(),mod();
+
+Assignment 3:(with return keyword)
+==================
+W.A.Java code where declare 5 methods and pass parameters and display result
+Create CalCulator2 class and declare add(),sub(),mul(),div(),mod();
