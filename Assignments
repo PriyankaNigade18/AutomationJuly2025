@@ -14,3 +14,44 @@ Assignment 3:(with return keyword)
 ==================
 W.A.Java code where declare 5 methods and pass parameters and display result
 Create CalCulator2 class and declare add(),sub(),mul(),div(),mod();
+
+control flow statements
+----------------------------
+Assignment 4:
+=======================
+W.A.Java code for validation of number is positive or negative or its Zero
+
+Assignment 5:
+=======================
+W.A.Java code where accept number from user and check is it palindrome
+logic: num-->reverse-->compare number(num=reverse=palindrome)
+121--->121--->121=121=yes
+123--->321--->123=321=No
+
+
+Assignment 6:
+=======================
+W.A.Java code where accept number from user and check is it an armstrong number
+logic:153 is armstrong
+153=(1*1*1)+(5*5*5)+(3*3*3)
+	=153(yes)
+
+Assignmet 7
+=======================
+W.A.Java code for print only odd numbers upto 25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
