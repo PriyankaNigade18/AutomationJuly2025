@@ -108,6 +108,31 @@ public class LoopDemo {
 		
 		System.out.println("Reverse number of 123 is: "+sum);
 		
+		System.out.println("--------------do while loop--------------");
+		
+		
+		int k=1;
+		
+		do
+		{
+			System.out.println("Hi");
+			k++;
+		}while(k>10);//one time 
+		
+		
+		System.out.println("---------------------");
+		
+		
+		int j=1;
+		do
+		{
+			System.out.println("Lets understand now nested loop....");
+			j++;
+			
+		}while(j<=5);
+		
+		
+		
 		
 		
 		
