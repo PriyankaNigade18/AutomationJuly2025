@@ -109,6 +109,91 @@ public class SingleDArray {
 		System.out.println(i);
 	}
 	
+	System.out.println("--------------------------");
+	
+	Object empData[]= {"Sarang","Pune",30,'M',987986876L};
+	System.out.println("Total deatils for employee: "+empData.length);
+	System.out.println(empData[2]);//30
+	
+	for(int i=0;i<empData.length;i++)
+	{
+		System.out.println(empData[i]);
+	}
+	
+	System.out.println("------------");
+	
+	for(Object i:empData)
+	{
+		System.out.println(i);
+	}
+	
+	System.out.println("-----Popular questions----------");
+	
+	//identify max number from this array
+	int number[]= {20,10,5,78,29,4,190,67};
+	
+	int max=number[0];
+	
+	for(int i=1;i<number.length;i++)
+	{
+		
+		if(number[i]>max)
+		{
+			max=number[i];
+		}
+	}
+	
+	System.out.println(max);
+	
+	System.out.println("---------------------");
+
+	//sum of numbers
+	
+	int sum=0;
+		
+	for(int i:number)
+	{
+		sum=sum+i;
+	}
+	
+	System.out.println("Sum of all numbers if array: "+sum);
+	
+	System.out.println("---------------------");
+
+	//identify number if present in array
+	int arr[]= {10,200,50,67,88,100,80,44};
+	
+	int target=110;
+	boolean status=false;
+	
+	for(int i:arr)
+	{
+		if(i==target)
+		{
+			status=true;
+			break;
+		}
+	}
+	
+	if(status)
+	{
+		System.out.println("Number found!: "+target);
+	}else
+	{
+		System.out.println("Number not found!: "+target);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	
