@@ -1,0 +1,11 @@
+
+Assignment1:
+--------------------------
+open Edge browser and navigate to Orangehrm application
+	1.get the title and validate it title should be OrangeHRM 
+	2.get the current url and validate current url should have protocol https
+	3.close the browser
+
+	Use URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+
+-------------------------------------------------------------------------------------	

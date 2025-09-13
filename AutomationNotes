@@ -1,0 +1,89 @@
+
+Selenium WebDriver
+=======================
+WebDriver is an Interface 
+Selenium WebDriver is an API for WebUI automation Test
+----------------------------------------------------------------
+Setup
+===========
+1.Using plain Java project
+2.Using Maven Project
+
+What is Maven?
+=============================
+Maven is build management or Project management tool
+
+pom.xml
+=============
+Project object model 
+-this is configuration file for this project
+-we can add required dependencies and Plugins
+
+
+what is Dependency?
+--------------------------
+It is library or executable file 
+
+Maven Project is developed by Apache Foundation
+Maven has two types of Repositories
+-----------------------------------
+1.Local Repository
+-----------------------
+c:/User/.m2(Maven Repo)
+
+2.Share/remote Repository
+-----------------------------
+https://mvnrepository.com/
+
+POM.xml
+===========
+<project>
+
+<dependencies>
+
+<dependency> Selenium WebDriver</dependency>
+
+</dependencies>
+
+</project>
+=====================================================
+
+WebDriver
+=================
+Browser commands
+---------------------
+1.get(url):Open application into browser
+2.getTitle(): get the current application title
+3.getCurrentUrl(): get the current url of Application
+4.getPageSource(): get the page source
+5.close(): close current open browser
+6.quit(): close all open browsers by selenium
+
+Window Handling
+---------------------------
+7.getWindowHandle()
+8.getWindowHandles()
+
+===============================================================
+Exceptions from selenium
+================================
+1.InvalidArgumentException: invalid argument
+---------------------------------------------
+Url address is wrong 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
