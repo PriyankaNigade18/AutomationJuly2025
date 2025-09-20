@@ -72,7 +72,23 @@ public class ArrayListDemo2_Methods {
 	    System.out.println("Middle element index for 20: "+index);//7
 	    *
 	    */
-	    
+	    int firstIndex = al.indexOf(20);  // Get the index of the first occurrence
+	    int secondIndex=-1;  // Default value if no second occurrence is found
+
+	    if (firstIndex != -1) {
+	        // Start searching from the next index after the first occurrence
+	        for (int i = firstIndex + 1; i < al.size(); i++) {
+	            Integer currentElement = al.get(i);  // Get the element at index i
+	            
+	            // Check if the current element is not null and equals 20
+	            if (currentElement != null && currentElement == 20) {
+	                secondIndex = i;
+	                break;  // Once the second occurrence is found, exit the loop
+	            }
+	        }
+	    }
+
+	    System.out.println("Index of second 20: " + secondIndex);
 	    Object arr[]=al.toArray();
 	    for(Object i:arr)
 	    {
