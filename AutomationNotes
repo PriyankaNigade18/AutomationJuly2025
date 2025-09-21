@@ -13,7 +13,7 @@ What is Maven?
 =============================
 Maven is build management or Project management tool
 
-pom.xml
+pom.xml file
 =============
 Project object model 
 -this is configuration file for this project
