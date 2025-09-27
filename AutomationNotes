@@ -71,6 +71,126 @@ Exceptions from selenium
 ---------------------------------------------
 Url address is wrong 
 
+2.org.openqa.selenium.NoSuchElementException
+----------------------------------------------
+When selenium fail to identify any webelement
+
+
+
+Navigation Commands in Selenium
+-------------------------------------
+Selenium provides Navigation Interface and 
+using navigate() we can navigate in between app
+
+1.to(url):open application
+-----------------------------
+driver.navigate().to(url)
+
+2.back()
+----------------
+driver.navigate().back()
+
+3.forward()
+-------------------
+driver.navigate().forward()
+
+4.refresh()
+----------------
+driver.navigate().refresh()
+
+How to Identify Any WebElement in Selenium
+-------------------------------------------------
+what is WebElement?
+---------------------------
+Every GUI is WebElement(like button,textbox,dropdown,img,link....etc)
+Technically WebElement is Interface in Selenium
+
+How to interact any webelement?
+----------------------------------
+1.Identify webelement address to interact
+2.perform action on that element
+
+How to identify Any webelement is Selenium?
+--------------------------------------------
+Selenium identify webelement using Locators
+
+What is Locator?
+-----------------------
+Locator is Address of webelement from webpage
+
+Selenium support total 8 Locators
+----------------------------------
+1.By id (primary locator)
+2.By name
+3.By className
+4.By linkTex
+5.By partialLinkText
+6.By tagName
+
+DynamicLocators
+-------------------
+7.By cssSelector
+8.By xpath
+
+By is class in selenium
+
+In Selenium 4 Relative Locators
+------------------------------------
+leftOf()
+rightOf()
+above()
+below()
+--------------------------------------------
+How selenium Identify and find that element
+---------------------------------------------
+1.get the address of element 
+2.then use selenium methods to identify that element
+3.perform action
+
+findElement()
+--------------
+- Identify Single webelement
+- this method return WebElment interface object
+
+
+findElements()
+-------------------
+- Identify multiple webelements
+- this method return List<WebElement>
+
+---------------------------------------------------
+Actions in Selenium
+----------------------
+Textbox,searchbox: 	enter text : sendKeys("text")
+				   	clear text : clear()
+Button,checkbox,radio,link: click: click()	
+------------------------------------------------	
+
+Webelement validation commands
+------------------------------------
+1.isElenabled()
+2.isDisplayed()
+3.isSelected()
+
+=====================================
+Locators
+===============
+How to automate any HyperLink
+-----------------------------------
+
+<a href="login.html">Sign In</a>
+				<a>  link text </a>
+
+1.linkText(full text) exact match
+--------------------------
+driver.findElement(By.linkText("Sign In")).click();
+
+
+2.partialLinkText(partial text)
+------------------------------------
+driver.finElement(By.partailLinkText("In")).click();
+
+
 
 
 

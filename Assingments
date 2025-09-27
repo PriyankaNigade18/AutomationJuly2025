@@ -9,3 +9,19 @@ open Edge browser and navigate to Orangehrm application
 	Use URL: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 
 -------------------------------------------------------------------------------------	
+
+Assignment2:
+----------------------------
+Open chrome browser navigate to https://www.saucedemo.com/v1/ this app 
+automate login functionality and check is user navigated in inventory page
+use url for validation
+
+Test data:
+username: standard_user
+password: secret_sauce
+
+
+
+
+
+
