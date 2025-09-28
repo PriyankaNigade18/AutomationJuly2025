@@ -21,6 +21,17 @@ username: standard_user
 password: secret_sauce
 
 
+Assignment3:
+----------------------
+Automate Orangehrm login and logout using cssSelector
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+Username : Admin
+Password : admin123
+
+Assignment4:
+--------------------
+Automate crm application login and logout using cssSelector
+https://automationplayground.com/crm/
 
 
 

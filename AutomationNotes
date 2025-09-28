@@ -151,12 +151,16 @@ findElement()
 --------------
 - Identify Single webelement
 - this method return WebElment interface object
+- If element not found then this method throws exception NoSuchElementException
 
 
 findElements()
 -------------------
 - Identify multiple webelements
-- this method return List<WebElement>
+- this method returns List<WebElement>
+- If element not found then this method never throws exception
+
+
 
 ---------------------------------------------------
 Actions in Selenium
@@ -189,6 +193,210 @@ driver.findElement(By.linkText("Sign In")).click();
 2.partialLinkText(partial text)
 ------------------------------------
 driver.finElement(By.partailLinkText("In")).click();
+
+By className
+-------------------------------
+class="btn btn-primary"
+		c1    c2
+
+org.openqa.selenium.InvalidSelectorException: Compound class names not permitted
+
+
+cssSelector
+----------------
+syntax
+------------
+tagname.className
+
+class="btn btn-default btn-primary"
+		c1    c2          c3	
+
+============================================
+
+By tagName
+==================
+Number of textboxes
+Number of images
+Number of links
+
+as tagName always match multiple elements
+
+============================================
+Synchronization Issue in Selenium
+-----------------------------------
+Tool is always execute faster than application and so
+there is time mapping issue in between tool and application which creates
+synchronization issue in selenium
+
+static wait in selenium
+--------------------
+Thread.sleep(2000);
+
+
+Selenium handle it with two Dynamic wait
+-------------------------------------
+1.Implicit wait
+-------------------------
+-It is global wait applicable for all the webelements from the page
+-Implicit wait default timeout is 0
+- write this wait after session created 
+
+Syntax:
+-------------
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+
+
+
+2.Explicit wait
+------------------------
+- It is applicable one element at a time based on certain condition
+-Explicit wait we can implement using two classes
+	1. WebDriverWait class
+	2. FluentWait class
+	
+	WebDriverWait(C) extends FluentWait(C) implements Wait(I)
+====================================================================
+	
+	WebElement special methods
+	==============================
+	In selenium version 4.20 we use getAttribute but in latest version it is deprecated
+	
+	1.getDomAttribute(attribute name)
+	----------------------------------
+	This method return value for attribute
+	
+	
+	2.getText():get the text of element
+	----------------------
+	- getText() capture the visible text of element
+	- getText() captures inner html text
+===============================================================
+Dynamic Locators
+=================
+1.By cssSelector
+2.By xpath
+
+cssSelector
+=====================
+Css is cascaded style sheet language to design and provide style to webelements
+
+What is cssSelector
+---------------------
+cssSelector is locator used in selenium to identify webelement based on css properties
+cssSelector can travel in only one direction(parent node--->child node)
+cssSelctor is faster than xpath
+In Ajax application we use cssSelector
+cssSelector not support any method
+
+1.tagname with id
+----------------------
+Syntax:
+------------
+tagname#id
+
+example:
+<input id="user-name">
+
+input#user-name
+#user-name
+
+2.tagname with attribute
+---------------------
+Syntax:
+------------
+tagname[attribute='value']
+input[placeholder='Password']
+
+3.tagname with classname
+-----------------------
+Syntax:
+------------
+tagname.className
+
+input.btn_action
+
+4.tagname with id,classname and attribute(optional)
+-------------------------------------
+Syntax:
+----------------
+tagname#id.className[attribute='value']
+
+
+Symbols
+--------------
+*
+$
+^
+
+To identify child node/element
+---------------------------------------
+>
+:nth-child(index)
+
+div[class='list-group']>a:nth-child(3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
