@@ -19,6 +19,7 @@ public class T14_LocatorDemo8_CssSelectorParentChildRelation {
 
 		//direct single child element
 		driver.findElement(By.cssSelector("div[class='list-group']>a:nth-child(3)")).click();
+		
 		/*
 		//multiple elements
 		List<WebElement> allOptions=driver.findElements(By.cssSelector("div[class='list-group']>a"));

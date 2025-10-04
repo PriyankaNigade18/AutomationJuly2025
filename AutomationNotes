@@ -75,6 +75,9 @@ Url address is wrong
 ----------------------------------------------
 When selenium fail to identify any webelement
 
+3.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+when page get refresh because of any step/action and DOM is taking time to load that page
+then element not found and exception you will get which is staleelement
 
 
 Navigation Commands in Selenium
@@ -325,9 +328,18 @@ tagname#id.className[attribute='value']
 
 Symbols
 --------------
-*
-$
-^
+*: contains() partial match
+------------
+tagname[attribute*='partial value']
+
+$:endsWith(suffix value)
+---------------------
+tagname[attribute$='suffix value']
+
+^ : stratsWith(prefix value)
+-----------------------
+tagname[attribute^='prefix value']
+
 
 To identify child node/element
 ---------------------------------------
@@ -335,6 +347,126 @@ To identify child node/element
 :nth-child(index)
 
 div[class='list-group']>a:nth-child(3)
+
+===================================================================
+8.By xpath
+====================
+xpath is path of the element from html/xml page
+xpath identify element from DOM(document object model)
+----------------------------------------
+HTML DOM
+--------------
+<html>---------------------root node
+
+<head>
+</head>
+
+<body>
+<a>
+<input>---------------------element
+<div>
+
+</body>
+</html>
+---------------------------------------------
+Types of xpath
+--------------------
+1.Absolute xpath
+--------------------
+- starts from root node to identify element
+- starts with '/'
+
+/html/body/div[2]/div/div/div/div[2]/div/form/div[1]/input
+
+2.Relative xpath
+----------------------
+- starts from any element relative property
+- starts with '//'
+
+//*[@id="input-email"]
+
+* any tag 
+=========================================
+
+Syntax:
+==============
+//tagname[@attribute='value']
+
+
+Xpath with operators
+-------------------
+1.and
+--------
+Syntax:
+===========
+//tagname[@attribute1='value' and @attibute2='value']
+
+2.or
+-----------
+Syntax:
+============
+//tagname[@attribute1='value' or @attibute2='value']
+
+Xpath with Index & position()
+----------------------------------
+Indexing
+============
+(xpath)[index]
+
+(xpath)[position()=index]
+
+
+Xpath Methods
+------------------
+1.text()
+
+2.normalize-space()
+
+3.contains()
+
+4.startsWith()
+
+
+Xpath Axies(dynamic element)
+-----------------------------
+1.ancestor
+2.parent
+3.child
+4.following
+5.following sibling
+6.preceding
+7.preceding sibling
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
