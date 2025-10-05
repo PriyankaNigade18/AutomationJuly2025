@@ -419,27 +419,153 @@ Indexing
 Xpath Methods
 ------------------
 1.text()
+---------------
+Based on visible text we can identify that element
+text() will not work with white space
+
+Syntax:
+--------------
+//tagname[text()='visible text of ele']
 
 2.normalize-space()
+-------------------------
+Based on visible text we can identify that element but here with normalize-space() 
+we can ignore white space(trim()) also.
 
-3.contains()
+syntax:
+-------------
+//tagname[normalize-space()='visible text of ele']
 
-4.startsWith()
+3.contains():partial match
+---------------------
+Based on partial match for text or attribute value we use contains()
 
+syntax:
+------------
+//tagname[contains(@attribute,'partial value')]
 
+OR
+
+//tagname[contains(text(),'partial text')]
+
+4.starts-with():prefix value
+------------------------------
+Based on prefix partial value or text we can identify element
+
+Syntax:
+-------------
+//tagname[starts-with(@attribute,'prefix value')]
+
+================================================
 Xpath Axies(dynamic element)
 -----------------------------
 1.ancestor
+---------------
+Syntax:
+==========
+//tagname[@attribute='value']//ancestor::tagname of ancestor
+
+get the tag name of ancestor for John
+----------------------------------------
+//td[text()='John']/ancestor::tbody............1 of 1
+
 2.parent
+-------------------
+Syntax:
+==========
+//tagname[@attribute='value']//parent::tagname of parent
+get the tag name of parent of John
+--------------------------------------------
+//td[text()='John']/parent::*........1 of 1 <tr>
+
 3.child
+--------------
+Syntax:
+==========
+//tagname[@attribute='value']//child::tagname of child
+
 4.following
+----------------
+Syntax:
+==========
+//tagname[@attribute='value']//following::tagname of following ele
+
+
 5.following sibling
+Syntax:
+==========
+//tagname[@attribute='value']//following-sibling::tagname of following sibling ele
+
 6.preceding
+Syntax:
+==========
+//tagname[@attribute='value']//preceding::tagname of preceding ele
+
 7.preceding sibling
+-------------------
+Syntax:
+==========
+//tagname[@attribute='value']//preceding-sibling::tagname of preceding sibling ele
+
+<tbody>-------------------------grand parent (ancestor)
+		<tr>(parent)
+ 
+         <td>4</td>---------------preceding sibling
+
+          <td>John</td>------------------element
+
+          <td>Robinson</td>---------------following sibling
+
+          <td>jr5527</td>---------------following sibling
+ 
+         <td>
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          </td>---------------following sibling
+
+        </tr>
+        
+    </tbody>
+
+=================================================================
+
+WebElement Automation
+=========================
+Dropdown Automation
+------------------
 
 
+Multiple Window
+Multiple Tab
+Alert
+Frame
+
+WebTable
+Calendar
+
+JavascriptExecutor
+----------------------
+
+Capabilities
+------------------
 
 
+Wait strategy
+------------------
+
+
+ActionsClass
+
+Special Scenarios
+--------------------
+svg element
+shadow DOM ele
+Broken links
+
+Framework
+--------------
+1.Testng
+2.Cucumber
 
 
 
