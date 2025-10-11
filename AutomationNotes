@@ -533,7 +533,39 @@ WebElement Automation
 =========================
 Dropdown Automation
 ------------------
+1.Select tag based dropdown
+--------------------------
+Selenium provides Select class to automate <Select> dropdown
 
+Select sc=new Select(dropdown address);
+
+Is dropdown support multiple options selection?
+------------------------------
+isMultiple()
+
+Single option selection
+--------------------------
+selectByValue("")
+selectByindex()
+selectByVisibleText("")
+
+To get all the options
+------------------------
+getOptions()
+
+
+
+
+
+
+
+2.Bootstrap/javascript/Autosuggestion dropdown
+---------------------------------
+Xpath locator
+
+Multiple Selection
+--------------------------
+https://demoqa.com/select-menu?utm_source=chatgpt.com 
 
 Multiple Window
 Multiple Tab
@@ -547,7 +579,25 @@ JavascriptExecutor
 ----------------------
 
 Capabilities
-------------------
+======================
+https://developer.chrome.com/docs/chromedriver/capabilities
+Capabilities are options that you can use to customize and configure a ChromeDriver session. 
+
+Capabilities help to customize browser session
+Selenium provide us Classes
+
+Chrome: ChromeOptions class
+Firefox : FirefoxOptions class
+Edge: EdgeOptions class
+
+Scenario
+--------------------
+-headless mode
+-maximize window
+-download file in Working directory
+-Incognito
+-disable notification
+
 
 
 Wait strategy
