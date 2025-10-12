@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class T27_BootstrapDropdown_RedBus {
   @Test
-  public void testDropdown()
+  public void testDropdown() throws InterruptedException
   {
 	  //create driver session
 	  WebDriver driver=new ChromeDriver();
@@ -23,6 +23,8 @@ public class T27_BootstrapDropdown_RedBus {
 	  driver.findElement(By.xpath("//div[text()='From']")).click();
 	    
 	  driver.findElement(By.id("srcDest")).sendKeys("pune");
+	  
+	  Thread.sleep(2000);
 	  
 	  List<WebElement> allOptions=driver.findElements(By.xpath("(//div)[1]//div[contains(@class,'listItem')]//div[contains(@class,'listHeader')]"));
 	  System.out.println("Total options found: "+allOptions.size());

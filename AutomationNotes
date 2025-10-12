@@ -75,11 +75,16 @@ Url address is wrong
 ----------------------------------------------
 When selenium fail to identify any webelement
 
-3.StaleElementReferenceException: stale element reference: stale element not found in the current frame
+3.StaleElementReferenceException:
+---------------------------------------
+ stale element reference: stale element not found in the current frame
 when page get refresh because of any step/action and DOM is taking time to load that page
 then element not found and exception you will get which is staleelement
 
-
+4.UnhandledAlertException: unexpected alert open: {Alert text : Please enter a valid user name}
+---------------------------------------
+If you missed to handle any alert
+===========================================
 Navigation Commands in Selenium
 -------------------------------------
 Selenium provides Navigation Interface and 
@@ -567,9 +572,65 @@ Multiple Selection
 --------------------------
 https://demoqa.com/select-menu?utm_source=chatgpt.com 
 
-Multiple Window
-Multiple Tab
+=============================================================
+Multiple Window Handling
+===========================
+1.getWindowHandle():String: parent window SessionId
+2.getWindowHandles():Set<String>: All windows Id
+3.switchTo(): switch to target(window,alert,frame)
+
+driver.switchTo().window();
+
+Open New Tab/New Window
+------------------------------
+Selenium 4 version we have command newWindow()
+newWindow():WebDriver 
+
+driver.switchTo().newWindow(WindowType.TAB);
+
+
+driver.switchTo().newWindow(WindowType.WINDOW);
+
+======================================================
 Alert
+===========
+Alert always appear from browser or application side...
+
+Selenium Handle is using Alert interface
+
+Types of Alert
+-------------------
+1.Simple alert with Ok
+2.Confirmation alert
+3.Prompt alert
+
+1.you need to switch to the alert
+Alert alt=driver.switchTo().alert();
+
+2.then handle
+
+4Methods from Alert interface
+---------------------------
+1.get the text of alert
+getText()
+
+2.click on Ok 
+accept()
+
+3.click on cancel
+dismiss()
+
+4.enter text into alert(prompt)
+sendKeys()
+
+
+Authentication popup
+-------------------------
+
+
+
+
+
 Frame
 
 WebTable

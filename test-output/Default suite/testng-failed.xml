@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.ElementAutomation.T27_BootstrapDropdown_RedBus">
+      <class name="com.WebTesting.ElementAutomation.T33_AlertHandlingDemo1_Rediffmail">
         <methods>
-          <include name="testDropdown"/>
+          <include name="testAlert"/>
         </methods>
-      </class> <!-- com.WebTesting.ElementAutomation.T27_BootstrapDropdown_RedBus -->
+      </class> <!-- com.WebTesting.ElementAutomation.T33_AlertHandlingDemo1_Rediffmail -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

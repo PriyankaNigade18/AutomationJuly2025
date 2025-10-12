@@ -2,6 +2,7 @@ package com.WebTesting.Generic;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
@@ -27,6 +28,50 @@ public class Utility
 		  }
 	}
 	
+	
+
+	
+	//Window handling utilities
+	
+	
+	//design reusable code(utility) to close all windows
+	
+	public static void closeAllChildWindows(WebDriver driver,List<String> allHandles,String parentId)
+	{
+		for(String childWindowId:allHandles)//[101,102,103,104,105]
+		  {
+			if(!parentId.equals(childWindowId))
+			{
+				driver.switchTo().window(childWindowId).close();
+			}
+			  
+		  }
+	}
+	
+	//parent Window Acces
+	public static WebDriver switchToParentWindow(WebDriver driver,String parentId)
+	{
+		driver.switchTo().window(parentId);
+		return driver;
+		
+	}
+	
+	//switch to appropriate window
+	public static boolean switchToExpectedWindow(WebDriver driver,List<String> allHandles,String windowTitle)
+	{
+		for(String windowId:allHandles)
+		  {
+			  //get the title of every window
+			  String title=driver.switchTo().window(windowId).getTitle();
+			  if(title.contains(windowTitle))
+			  {
+				  System.out.println("Found right window");
+				  return true;
+			  }
+			 
+		  }
+		return false;
+	}
 	
 	
 
