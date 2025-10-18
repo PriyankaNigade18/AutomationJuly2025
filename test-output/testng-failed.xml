@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.ElementAutomation.T33_AlertHandlingDemo1_Rediffmail">
+      <class name="com.WebTesting.ElementAutomation.T37_JavascriptExecutorInterface">
         <methods>
-          <include name="testAlert"/>
+          <include name="testJavascriptExecutorInterface"/>
         </methods>
-      </class> <!-- com.WebTesting.ElementAutomation.T33_AlertHandlingDemo1_Rediffmail -->
+      </class> <!-- com.WebTesting.ElementAutomation.T37_JavascriptExecutorInterface -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

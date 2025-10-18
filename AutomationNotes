@@ -84,6 +84,13 @@ then element not found and exception you will get which is staleelement
 4.UnhandledAlertException: unexpected alert open: {Alert text : Please enter a valid user name}
 ---------------------------------------
 If you missed to handle any alert
+
+5.NoSuchFrameException: no such frame
+------------------------------------------
+when selenium not identified expected frame then ypu will get this exeception
+
+
+
 ===========================================
 Navigation Commands in Selenium
 -------------------------------------
@@ -626,18 +633,55 @@ sendKeys()
 
 Authentication popup
 -------------------------
+https://the-internet.herokuapp.com/basic_auth
+
+Syntax:
+--------------
+https://username:password@the-internet.herokuapp.com/basic_auth
+==================================================
+Fram/iframe automation
+============================
+Frame is one html document embedded into another html document is called frame/iframe
+
+driver.switchTo().frame(index);
+driver.switchTo().frame(id/name);
+driver.switchTo().frame(WebElement framEle);
+
+Types of Frame
+=================
+1.Simple frame
+2.Nested Frame
+
+Navigate to main document
+-----------------------
+driver.switchTo().defaultContent()
+
+Navigate to parent frame
+----------------------------
+driver.switchTo().parentFrame()
+
+=================================================
+JavascriptExecutor
+----------------------
+1.scroll the page
+2.get the page title
+3.to refresh webpage
+4.to interact with elements
+
+next session
+
+5.hidden element
 
 
 
 
 
-Frame
+
 
 WebTable
 Calendar
 
-JavascriptExecutor
-----------------------
+
 
 Capabilities
 ======================
