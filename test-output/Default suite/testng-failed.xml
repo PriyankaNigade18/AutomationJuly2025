@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.ElementAutomation.T37_JavascriptExecutorInterface">
+      <class name="com.WebTesting.ElementAutomation.T38_JavascriptExecutorHiddenElement">
         <methods>
-          <include name="testJavascriptExecutorInterface"/>
+          <include name="testHiddlenElement"/>
         </methods>
-      </class> <!-- com.WebTesting.ElementAutomation.T37_JavascriptExecutorInterface -->
+      </class> <!-- com.WebTesting.ElementAutomation.T38_JavascriptExecutorHiddenElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

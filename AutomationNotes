@@ -667,20 +667,41 @@ JavascriptExecutor
 2.get the page title
 3.to refresh webpage
 4.to interact with elements
-
-next session
-
 5.hidden element
 
-
-
-
-
-
-
 WebTable
-Calendar
+==============
+1.static table
+---------------
+Total number of rows
+-----------------
+//table[@name='BookTable']//tbody//tr
 
+Total headings
+----------------------
+//table[@name='BookTable']//tbody//tr//th
+
+Total number of columns
+------------------
+//table[@name='BookTable']//tbody//tr[2]//td
+
+Print specific row
+---------------------
+//table[@name='BookTable']//tbody//tr[3]
+
+print specific column
+-----------------------
+//table[@name='BookTable']//tbody//tr//td[2]
+
+print all data from table
+-------------------------
+//table[@name='BookTable']//tbody//tr//td
+
+2.dynamic table
+3.table with Pagination
+
+Calendar
+==========
 
 
 Capabilities

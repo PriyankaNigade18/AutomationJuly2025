@@ -64,3 +64,20 @@ and in next 10 tabs open facebook application and get the title of each page
  ---------------------
  Automate frame scenario from this https://ui.vision/demo/webtest/frames/ application
  
+ 
+ Assignment 10: Static Table
+ ---------------------
+ Navigate to https://testautomationpractice.blogspot.com/ application
+ Automate statoic webtable Price column 
+ Calculate total price for all books from table
+ 
+ Assignment 11: Dynamic Table
+ -------------------
+ Navigate to https://testautomationpractice.blogspot.com/ app
+ Automate dynamic table scenario
+ 	Memory Size of Firefox process: 61.9 MB
+ 	Disk space of Firefox process: 0.93 MB/s
+
+ 	
+
+ 	
