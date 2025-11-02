@@ -697,12 +697,15 @@ print all data from table
 -------------------------
 //table[@name='BookTable']//tbody//tr//td
 
-2.dynamic table
-3.table with Pagination
+2.Dynamic table
 
-Calendar
-==========
+3.Table with Pagination
 
+=============================
+Calendar/Date Picker
+====================
+done
+================================================
 
 Capabilities
 ======================
@@ -719,16 +722,26 @@ Edge: EdgeOptions class
 Scenario
 --------------------
 -headless mode
+---------------
+Regression testing
+Without Ui (Faster)
+ --headless
+ 
 -maximize window
--download file in Working directory
+	start-maximized
+	
 -Incognito
+	--incognito
+
 -disable notification
 
+-download file in Working directory
+-upload files
 
 
 Wait strategy
 ------------------
-
+ timeouts={implicit=0, pageLoad=300000, script=30000}
 
 ActionsClass
 

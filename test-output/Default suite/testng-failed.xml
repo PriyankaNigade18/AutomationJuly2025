@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.ElementAutomation.T38_JavascriptExecutorHiddenElement">
+      <class name="com.WebTesting.ElementAutomation.T43_GoibiboCalendarAutomation">
         <methods>
-          <include name="testHiddlenElement"/>
+          <include name="testCalendar"/>
         </methods>
-      </class> <!-- com.WebTesting.ElementAutomation.T38_JavascriptExecutorHiddenElement -->
+      </class> <!-- com.WebTesting.ElementAutomation.T43_GoibiboCalendarAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
