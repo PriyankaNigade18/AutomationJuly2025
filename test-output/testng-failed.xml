@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.ElementAutomation.T43_GoibiboCalendarAutomation">
+      <class name="com.WebTesting.Wait.T54_ExplicitWaitInSelenium">
         <methods>
-          <include name="testCalendar"/>
+          <include name="testWait"/>
         </methods>
-      </class> <!-- com.WebTesting.ElementAutomation.T43_GoibiboCalendarAutomation -->
+      </class> <!-- com.WebTesting.Wait.T54_ExplicitWaitInSelenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -734,14 +734,76 @@ Without Ui (Faster)
 	--incognito
 
 -disable notification
+	--disable-notifications
+
 
 -download file in Working directory
+-------------------------------
+ChromeOptions options = new ChromeOptions();
+Map<String, Object> prefs = new HashMap<String, Object>();
+prefs.put("download.default_directory","C:\\Users\\piyun\\OneDrive\\Desktop\\Trainings\\July2025\\MavenSeleniumProject");
+options.setExperimentalOption("prefs",prefs);
+	  
 -upload files
 
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.Toolkit;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 
+Clipboard (ctrl+c)
+============
+StringSelection sc=new StringSelection("file path");
+Toolkit.getDefaultToolkit().getSystemClipboard().setContents(sc,null);
+
+===========================================================
 Wait strategy
 ------------------
  timeouts={implicit=0, pageLoad=300000, script=30000}
+ 
+Synchronization Issue in Selenium
+-----------------------------------
+Tool is always execute faster than application and so
+there is time mapping issue in between tool and application which creates
+synchronization issue in selenium
+
+
+Default wait in Selenium
+----------------------------
+timeouts={implicit=0, pageLoad=300000, script=30000}
+
+PageLoad: 5mins
+Implicit wait:0
+Script timeout:30sec
+
+Interval time/Polling time in selenium to search element on webpage: 0.5sec or 500ms
+
+
+Static wait in selenium
+--------------------
+Thread.sleep(2000);
+
+Selenium handle it with two Dynamic wait
+-------------------------------------
+1.Implicit wait
+-------------------------
+-It is global wait applicable for all the webelements from the page
+-Implicit wait default timeout is 0
+- write this wait after session created 
+
+Syntax:
+-------------
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
+2.Explicit wait
+------------------------
+- It is applicable one element at a time based on certain condition
+-Explicit wait we can implement using two classes
+	1. WebDriverWait class
+	2. FluentWait class
+	
+	WebDriverWait(C) extends FluentWait(C) implements Wait(I)
 
 ActionsClass
 
