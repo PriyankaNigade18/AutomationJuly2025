@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.Wait.T54_ExplicitWaitInSelenium">
+      <class name="com.WebTesting.ActionsClass.T61_SliderTest">
         <methods>
-          <include name="testWait"/>
+          <include name="testSlider"/>
         </methods>
-      </class> <!-- com.WebTesting.Wait.T54_ExplicitWaitInSelenium -->
+      </class> <!-- com.WebTesting.ActionsClass.T61_SliderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

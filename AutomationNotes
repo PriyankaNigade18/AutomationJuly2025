@@ -804,12 +804,34 @@ driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	2. FluentWait class
 	
 	WebDriverWait(C) extends FluentWait(C) implements Wait(I)
-
+=================================================================
 ActionsClass
+=====================
+Mouse+Keyboard 
+----------
+Rightclick: contextClick()
+double click: doubleClick()
+mouse over: moveToElement()
+click and hold: clickAndHold()
+dran and drop: dragAndDrop()
 
 Special Scenarios
 --------------------
 svg element
+------------------
+SVG, or Scalable Vector Graphics, is an XML-based vector image format for describing two-dimensional graphics
+
+SVG element you can automate only using xpath
+
+Syntax:
+--------------
+//*[name()='svg']
+
+or
+
+//*[local-name()='svg']
+
+
 shadow DOM ele
 Broken links
 
