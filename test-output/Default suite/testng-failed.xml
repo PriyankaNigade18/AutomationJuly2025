@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.ActionsClass.T61_SliderTest">
+      <class name="com.WebTesting.SpecialScenarios.T66_BrokenLinkAutomation">
         <methods>
-          <include name="testSlider"/>
+          <include name="testBrokenLink"/>
         </methods>
-      </class> <!-- com.WebTesting.ActionsClass.T61_SliderTest -->
+      </class> <!-- com.WebTesting.SpecialScenarios.T66_BrokenLinkAutomation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

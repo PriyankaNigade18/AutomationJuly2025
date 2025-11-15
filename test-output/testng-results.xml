@@ -1,17 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-09T09:54:41 IST" name="Default suite" finished-at="2025-11-09T09:54:46 IST" duration-ms="5705">
+  <suite started-at="2025-11-15T09:54:40 IST" name="Default suite" finished-at="2025-11-15T09:54:40 IST" duration-ms="78">
     <groups>
     </groups>
-    <test started-at="2025-11-09T09:54:41 IST" name="Default test" finished-at="2025-11-09T09:54:46 IST" duration-ms="5705">
-      <class name="com.WebTesting.SpecialScenarios.T64_SvgElementAutomation">
-        <test-method signature="testSvgElement()[pri:0, instance:com.WebTesting.SpecialScenarios.T64_SvgElementAutomation@6302bbb1]" started-at="2025-11-09T09:54:41 IST" name="testSvgElement" finished-at="2025-11-09T09:54:46 IST" duration-ms="5662" status="PASS">
+    <test started-at="2025-11-15T09:54:40 IST" name="Default test" finished-at="2025-11-15T09:54:40 IST" duration-ms="78">
+      <class name="com.WebTesting.TestNG.T68_InvocationCount">
+        <test-method signature="userRegister()[pri:1, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userRegister" finished-at="2025-11-15T09:54:40 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSvgElement -->
-      </class> <!-- com.WebTesting.SpecialScenarios.T64_SvgElementAutomation -->
+        </test-method> <!-- userRegister -->
+        <test-method signature="userLogin()[pri:2, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userLogin" finished-at="2025-11-15T09:54:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogin -->
+        <test-method signature="userSearch()[pri:3, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userSearch" finished-at="2025-11-15T09:54:40 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearch -->
+        <test-method signature="userSearch()[pri:3, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userSearch" finished-at="2025-11-15T09:54:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearch -->
+        <test-method signature="userSearch()[pri:3, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userSearch" finished-at="2025-11-15T09:54:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSearch -->
+        <test-method signature="userLogout()[pri:4, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userLogout" finished-at="2025-11-15T09:54:40 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userLogout -->
+      </class> <!-- com.WebTesting.TestNG.T68_InvocationCount -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

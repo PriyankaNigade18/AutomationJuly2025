@@ -830,15 +830,97 @@ Syntax:
 or
 
 //*[local-name()='svg']
+=============================================
+Shadow DOM ele
+========================
+what is Shadow DOM?
+----------------------
+Whenever DOM is loaded inside another DOM is called Shadow DOM
+
+Logic
+----------
+main document-->shadow host-->shadow root-->shadow ele
 
 
-shadow DOM ele
+Which element we can called as shadow element?
+----------------------------------------
+if element is designed with #shadow-root(open) then that element is shadow ele
+
+Parent tag/element for shadow element is shadow root
+Parent tag/element for shadow root is shadow host
+
+Shadow dom elements we can automate only using cssSelector
+
+If element design with #shadow-root(closed) we can not automate this element
+
+=====================================
 Broken links
+-----------------------
+<a href="url">link</a>
 
+
+
+How to identify broken link
+-------------------------------
+the link status code if it is 400 and greater than 400 is broken
+
+If link contains href attribute value as null or empty then such link we can not automate
+
+
+1.link should have href attribute and it should not empty or null
+2.only valid link request we can send to the server
+3.get status code from server and validate it
+
+=============================================
 Framework
 --------------
 1.Testng
+==================
+
+Arguments for test
+------------------
+1.priority: To run test case in sequence
+2.description:to set some description
+3.invocationCount: To run test case 
+
+Assertions in Testng
+
+4.timeOut
+5.depends on methods
+6.enabled=false
+7.groups
+
+How to create test suite
+
+How to use test data in Testng
+----------------------
+1.Using xml file
+2.Using Properties file
+
+How to read data from Excel file
+
+Data driven testing
+
+Screenshot
+
+How to do parallel testing
+
+Page object model
+
+Hybrid framework design
+
+Reports
+------------
+Extent Report 
+chain test report
+
 2.Cucumber
+===================
+
+
+API
+
+Appium 
 
 
 
