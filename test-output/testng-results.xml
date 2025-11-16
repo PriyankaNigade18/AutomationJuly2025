@@ -1,37 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-15T09:54:40 IST" name="Default suite" finished-at="2025-11-15T09:54:40 IST" duration-ms="78">
+  <suite started-at="2025-11-16T09:34:08 IST" name="Default suite" finished-at="2025-11-16T09:34:08 IST" duration-ms="52">
     <groups>
     </groups>
-    <test started-at="2025-11-15T09:54:40 IST" name="Default test" finished-at="2025-11-15T09:54:40 IST" duration-ms="78">
-      <class name="com.WebTesting.TestNG.T68_InvocationCount">
-        <test-method signature="userRegister()[pri:1, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userRegister" finished-at="2025-11-15T09:54:40 IST" duration-ms="11" status="PASS">
+    <test started-at="2025-11-16T09:34:08 IST" name="Default test" finished-at="2025-11-16T09:34:08 IST" duration-ms="52">
+      <class name="com.WebTesting.TestNG.T75_AnnotationBasics">
+        <test-method is-config="true" signature="bsuite()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="bsuite" finished-at="2025-11-16T09:34:08 IST" duration-ms="8" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userRegister -->
-        <test-method signature="userLogin()[pri:2, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userLogin" finished-at="2025-11-15T09:54:40 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- bsuite -->
+        <test-method is-config="true" signature="btest()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="btest" finished-at="2025-11-16T09:34:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLogin -->
-        <test-method signature="userSearch()[pri:3, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userSearch" finished-at="2025-11-15T09:54:40 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- btest -->
+        <test-method is-config="true" signature="bclass()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="bclass" finished-at="2025-11-16T09:34:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userSearch -->
-        <test-method signature="userSearch()[pri:3, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userSearch" finished-at="2025-11-15T09:54:40 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- bclass -->
+        <test-method is-config="true" signature="bmethod()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="bmethod" finished-at="2025-11-16T09:34:08 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userSearch -->
-        <test-method signature="userSearch()[pri:3, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userSearch" finished-at="2025-11-15T09:54:40 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- bmethod -->
+        <test-method signature="registerTest()[pri:1, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="registerTest" finished-at="2025-11-16T09:34:08 IST" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userSearch -->
-        <test-method signature="userLogout()[pri:4, instance:com.WebTesting.TestNG.T68_InvocationCount@4562e04d]" started-at="2025-11-15T09:54:40 IST" name="userLogout" finished-at="2025-11-15T09:54:40 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- registerTest -->
+        <test-method is-config="true" signature="amethod()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="amethod" finished-at="2025-11-16T09:34:08 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- userLogout -->
-      </class> <!-- com.WebTesting.TestNG.T68_InvocationCount -->
+        </test-method> <!-- amethod -->
+        <test-method signature="loginTest()[pri:2, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="loginTest" finished-at="2025-11-16T09:34:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="bmethod()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="bmethod" finished-at="2025-11-16T09:34:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method is-config="true" signature="amethod()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="amethod" finished-at="2025-11-16T09:34:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amethod -->
+        <test-method signature="logoutTest()[pri:3, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="logoutTest" finished-at="2025-11-16T09:34:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutTest -->
+        <test-method is-config="true" signature="bmethod()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="bmethod" finished-at="2025-11-16T09:34:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmethod -->
+        <test-method is-config="true" signature="amethod()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="amethod" finished-at="2025-11-16T09:34:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amethod -->
+        <test-method is-config="true" signature="aclass()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="aclass" finished-at="2025-11-16T09:34:08 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- aclass -->
+        <test-method is-config="true" signature="atest()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="atest" finished-at="2025-11-16T09:34:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- atest -->
+        <test-method is-config="true" signature="asuite()[pri:0, instance:com.WebTesting.TestNG.T75_AnnotationBasics@1573f9fc]" started-at="2025-11-16T09:34:08 IST" name="asuite" finished-at="2025-11-16T09:34:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- asuite -->
+      </class> <!-- com.WebTesting.TestNG.T75_AnnotationBasics -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

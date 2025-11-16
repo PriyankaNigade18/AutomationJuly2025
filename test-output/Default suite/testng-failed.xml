@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.SpecialScenarios.T66_BrokenLinkAutomation">
+      <class name="com.WebTesting.TestNG.T71_DependsOnMethodArgument">
         <methods>
-          <include name="testBrokenLink"/>
+          <include name="logoutTest"/>
+          <include name="loginTest"/>
+          <include name="registerTest"/>
         </methods>
-      </class> <!-- com.WebTesting.SpecialScenarios.T66_BrokenLinkAutomation -->
+      </class> <!-- com.WebTesting.TestNG.T71_DependsOnMethodArgument -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

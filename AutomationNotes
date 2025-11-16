@@ -884,13 +884,75 @@ Arguments for test
 3.invocationCount: To run test case 
 
 Assertions in Testng
+------------------------
+Validate current state of the application
+1.Hard assertion
+2.Soft assertion
 
-4.timeOut
-5.depends on methods
+When Assertion fail we will get AssertionError
+---------------------------------------------
+
+4.timeOut:The maximum number of milliseconds this test should take. 
+If it hasn't returned after this time, it will be marked as a FAIL.
+
+5.dependsOnMethods:Apply dependency between test cases
+
+How to test suite
+--------------------
+Collection of test cases
+
+XML 
+TestNG xml file its configuration file for testng Class
+
+<suite>
+<test>
+<classes>
+<class name="">
+<method>registerTest</method>.......@Test
+</class>
+</classes>
+</test>
+</suite>
+
 6.enabled=false
-7.groups
+How to ignore/ disable any test case from current execution
+-------------------------------------------------------
+1.Using enabled argument
+2.Using xml file (include and exclude test)
 
-How to create test suite
+<class name="com.WebTesting.TestNG.T72_DisableTest">
+      <methods>
+         <exclude name="testForSearch"></exclude>//disable
+         <!--<include name="testForSearch"></include>-->//include test in execution
+      </methods>     
+      </class>
+
+7.groups
+------------
+We can groups test case based on types
+
+----------------------------------------------
+TestNG Annotations(rule)
+-------------------
+prerequisite
+---------------
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+
+postconditions
+------------------
+@AfterSuite
+@AfterTest
+@AfterClass
+@AfterMethod
+
+Real time usage in next session........
+
+Page Object Model(Design pattern)
+------------------------
+
 
 How to use test data in Testng
 ----------------------
@@ -904,8 +966,6 @@ Data driven testing
 Screenshot
 
 How to do parallel testing
-
-Page object model
 
 Hybrid framework design
 
