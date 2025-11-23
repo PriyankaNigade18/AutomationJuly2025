@@ -948,12 +948,23 @@ postconditions
 @AfterClass
 @AfterMethod
 
-Real time usage in next session........
-
 Page Object Model(Design pattern)
-------------------------
+-------------------------------
+Page Object Model Its design pattern used to improve readability of code
+as well as improve maintenance and Used to implement Object repository
 
+Selenium does not have its own repository
+-------------------------------------------
+Selenium uses Page Object Model and Properties file 
+to implement Object Repository
 
+To implement POM
+--------------------
+1.Using By locator
+2.Using PageFactory class
+
+========================================
+Next class......
 How to use test data in Testng
 ----------------------
 1.Using xml file
@@ -973,6 +984,8 @@ Reports
 ------------
 Extent Report 
 chain test report
+
+Devops
 
 2.Cucumber
 ===================

@@ -1,0 +1,24 @@
+package com.WebTesting.TestNG.POMUsingPageFactoryClass;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.BeforeClass;
+
+public class BaseClass 
+{
+	public WebDriver driver;
+	public LoginPage lp;
+	
+	@BeforeClass
+	public void setUp()
+	{
+		driver=new EdgeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.get("https://automationplayground.com/crm/login.html");
+		lp=new LoginPage(driver);
+		
+	}
+
+}

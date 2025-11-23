@@ -1,4 +1,4 @@
-package com.WebTesting.TestNG;
+package com.WebTesting.TestNG.Annotations;
 
 import org.testng.annotations.*;
 
