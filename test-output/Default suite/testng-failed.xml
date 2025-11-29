@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.TestNG.POMUsingByLocator.CRMLoginTest">
+      <class name="com.WebTesting.TestNG.TestDataReading.Tc77_DataReadingFromXmlDemo1">
         <methods>
-          <include name="setUp"/>
-          <include name="testAppLogin"/>
-          <include name="testAppTitle"/>
-          <include name="testAppUrl"/>
+          <include name="readData"/>
         </methods>
-      </class> <!-- com.WebTesting.TestNG.POMUsingByLocator.CRMLoginTest -->
+      </class> <!-- com.WebTesting.TestNG.TestDataReading.Tc77_DataReadingFromXmlDemo1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

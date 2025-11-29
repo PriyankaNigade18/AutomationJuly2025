@@ -968,15 +968,46 @@ Next class......
 How to use test data in Testng
 ----------------------
 1.Using xml file
+-------------------------
+1.Set data using : <parameter name="" value=""/>
+
+2. read data in test case using: @Parameters
+
+3.run xml file
+
+Real use case
+--------------------
+How to do parallel testing
+----------------------
+1.Method level(one class with multiple test case @test(method)
+<suite name="Suite" parallel="methods">
+
+2.Class level(multiple classes)
+<suite name="Suite" parallel="classes">
+
+3.Test level(one suite-->multiple<test> )
+<suite name="Suite" parallel="tests">
+
+xml file applicable for limited set of data
+-----------------------
+
 2.Using Properties file
+---------------------------
+UseCase: to maintain Object repository
+UseCase: To store multiple data
+
 
 How to read data from Excel file
+==================================
+Apache POI Api required
+
 
 Data driven testing
+-----------------
+1.Array
+2.Excel file
 
 Screenshot
-
-How to do parallel testing
 
 Hybrid framework design
 
