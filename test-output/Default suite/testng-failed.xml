@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.WebTesting.TestNG.TestDataReading.Tc77_DataReadingFromXmlDemo1">
+      <class name="com.WebTesting.TetsNG.DataDrivenTest.Tc89_ReadExcelDataUsingUtility">
         <methods>
-          <include name="readData"/>
+          <include name="testData"/>
         </methods>
-      </class> <!-- com.WebTesting.TestNG.TestDataReading.Tc77_DataReadingFromXmlDemo1 -->
+      </class> <!-- com.WebTesting.TetsNG.DataDrivenTest.Tc89_ReadExcelDataUsingUtility -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-29T09:51:21 IST" name="Default suite" finished-at="2025-11-29T09:51:21 IST" duration-ms="679">
+  <suite started-at="2025-11-30T09:19:09 IST" name="Default suite" finished-at="2025-11-30T09:19:18 IST" duration-ms="8463">
     <groups>
     </groups>
-    <test started-at="2025-11-29T09:51:21 IST" name="Default test" finished-at="2025-11-29T09:51:21 IST" duration-ms="679">
-      <class name="com.WebTesting.TestNG.TestDataReading.Tc85_DataReadingFromExcelFile">
-        <test-method signature="readDataFromExcel()[pri:0, instance:com.WebTesting.TestNG.TestDataReading.Tc85_DataReadingFromExcelFile@3270d194]" started-at="2025-11-29T09:51:21 IST" name="readDataFromExcel" finished-at="2025-11-29T09:51:21 IST" duration-ms="634" status="PASS">
+    <test started-at="2025-11-30T09:19:09 IST" name="Default test" finished-at="2025-11-30T09:19:18 IST" duration-ms="8463">
+      <class name="com.WebTesting.TetsNG.DataDrivenTest.Tc91_FullPageScreenshot">
+        <test-method signature="testFullPage()[pri:0, instance:com.WebTesting.TetsNG.DataDrivenTest.Tc91_FullPageScreenshot@34123d65]" started-at="2025-11-30T09:19:09 IST" name="testFullPage" finished-at="2025-11-30T09:19:18 IST" duration-ms="8419" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- readDataFromExcel -->
-      </class> <!-- com.WebTesting.TestNG.TestDataReading.Tc85_DataReadingFromExcelFile -->
+        </test-method> <!-- testFullPage -->
+      </class> <!-- com.WebTesting.TetsNG.DataDrivenTest.Tc91_FullPageScreenshot -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

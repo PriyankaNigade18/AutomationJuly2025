@@ -1001,18 +1001,24 @@ How to read data from Excel file
 ==================================
 Apache POI Api required
 
-
 Data driven testing
 -----------------
+Executing same set of action with multiple data multiple time is called data driven testing
+
 1.Array
 2.Excel file
 
+==================================
 Screenshot
+===============
+TakesScreenshot interface
+
 
 Hybrid framework design
 
 Reports
 ------------
+TestListener
 Extent Report 
 chain test report
 
