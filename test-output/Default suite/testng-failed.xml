@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.SwagLabs.UITest.TestCases.Tc2_InventoryTest">
+      <class name="com.SwagLabs.UITest.TestCases.Tc3_CartTest">
         <methods>
-          <include name="validateCartPageLaunch"/>
-          <include name="pageSetUp"/>
-          <include name="validateAddToCartFeature"/>
+          <include name="validateCheckoutOption"/>
+          <include name="validateContinueShopping"/>
+          <include name="verifyCartProductCount"/>
+          <include name="tearDown"/>
+          <include name="validateProductRemoveFeature"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.SwagLabs.UITest.TestCases.Tc2_InventoryTest -->
+      </class> <!-- com.SwagLabs.UITest.TestCases.Tc3_CartTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

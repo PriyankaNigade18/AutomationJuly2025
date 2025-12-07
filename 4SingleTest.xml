@@ -5,13 +5,6 @@
   <parameter name="bname" value="edge"></parameter>
     <classes>
       <class name="com.SwagLabs.UITest.TestCases.Tc1_LoginTest"/>
-      <class name="com.SwagLabs.UITest.TestCases.Tc2_InventoryTest"/>
-      <class name="com.SwagLabs.UITest.TestCases.Tc3_CartTest"/>
-      <class name="com.SwagLabs.UITest.TestCases.Tc4_CheckoutTest"/>
-      <class name="com.SwagLabs.UITest.TestCases.Tc5_OverviewTest"/>
-      
     </classes>
   </test> <!-- Test -->
-  
-  
 </suite> <!-- Suite -->

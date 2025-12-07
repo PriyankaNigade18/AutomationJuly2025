@@ -12,7 +12,7 @@ public class Tc2_InventoryTest extends BaseClass
 	@BeforeClass
 	public void pageSetUp()
 	{
-		ip=lp.doLogin("standard_user","secret_sauce");
+		ip=lp.doLogin(prop.getData("un"),prop.getData("psw"));
 	}
 	
   @Test(priority=1)
@@ -33,7 +33,7 @@ public class Tc2_InventoryTest extends BaseClass
   @Test(priority=3)
   public void validateAddToCartFeature() 
   {
-	  ip.addProductIntoCart("Sauce Labs Bolt T-Shirt");
+	  ip.addProductIntoCart(prop.getData("product1"));
   }
   
   @Test(priority=4)
