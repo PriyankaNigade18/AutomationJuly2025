@@ -4,39 +4,6 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="bname" value="edge"/>
     <classes>
-      <class name="com.SwagLabs.UITest.TestCases.Tc5_OverviewTest">
-        <methods>
-          <include name="validateCheckout"/>
-          <include name="testWait"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="pageSetUp"/>
-          <include name="verifyPayment"/>
-        </methods>
-      </class> <!-- com.SwagLabs.UITest.TestCases.Tc5_OverviewTest -->
-      <class name="com.SwagLabs.UITest.TestCases.Tc2_InventoryTest">
-        <methods>
-          <include name="validateCartPageLaunch"/>
-          <include name="pageSetUp"/>
-          <include name="validateProductCount"/>
-          <include name="testWait"/>
-          <include name="validateProductDetails"/>
-          <include name="validateAddToCartFeature"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.SwagLabs.UITest.TestCases.Tc2_InventoryTest -->
-      <class name="com.SwagLabs.UITest.TestCases.Tc4_CheckoutTest">
-        <methods>
-          <include name="validateCheckoutWithoutData"/>
-          <include name="testWait"/>
-          <include name="validateCheckoutWithData"/>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="validateCancelProcess"/>
-          <include name="pageSetUp"/>
-        </methods>
-      </class> <!-- com.SwagLabs.UITest.TestCases.Tc4_CheckoutTest -->
       <class name="com.SwagLabs.UITest.TestCases.Tc1_LoginTest">
         <methods>
           <include name="verifyUrl"/>
@@ -47,18 +14,17 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- com.SwagLabs.UITest.TestCases.Tc1_LoginTest -->
-      <class name="com.SwagLabs.UITest.TestCases.Tc3_CartTest">
+      <class name="com.SwagLabs.UITest.TestCases.Tc4_CheckoutTest">
         <methods>
-          <include name="pageSetUp"/>
-          <include name="validateCheckoutOption"/>
-          <include name="validateContinueShopping"/>
-          <include name="verifyCartProductCount"/>
+          <include name="validateCheckoutWithoutData"/>
+          <include name="validateCheckoutWithData"/>
           <include name="testWait"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="validateProductRemoveFeature"/>
+          <include name="validateCancelProcess"/>
+          <include name="pageSetUp"/>
         </methods>
-      </class> <!-- com.SwagLabs.UITest.TestCases.Tc3_CartTest -->
+      </class> <!-- com.SwagLabs.UITest.TestCases.Tc4_CheckoutTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
