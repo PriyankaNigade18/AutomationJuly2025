@@ -1015,15 +1015,72 @@ TakesScreenshot interface
 
 
 Hybrid framework design
+========================
+Design + Execution
+
+Execution ways
+==============
+1.testng.xml
+2.pom.xml
+3.CLI
+4.Jenkins
+
+
+For Maven project execution we need Plugin 
+================================
+1.Compiler plugin
+======================
+https://maven.apache.org/plugins/maven-compiler-plugin/
+
+2.Surefire plugin
+========================
+https://maven.apache.org/surefire/maven-surefire-plugin/
+
+
+For CLI(Command line execution) download maven
+-----------------------------------
+https://maven.apache.org/download.cgi
+
+Goal
+===========
+1.clean
+--------------
+delete reports form target folder
+
+2.test
+--------------
+to execute your project (test)
+
+3.install
+-------------------
+it will install required document and test application
+
+
+Devops
+============
+Git & Github
+
+Jenkins
+==================
+what is job?
+----------------
+any task in jenkins is job
+
+
+MavenProject----->Jenkins
+MavenProject-->Github--->jenkins
 
 Reports
 ------------
 TestListener
 Extent Report 
+
+Docker
+-----------------
 chain test report
+Selenium grid
 
-Devops
-
+========================
 2.Cucumber
 ===================
 
