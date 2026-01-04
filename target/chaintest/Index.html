@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>chaintest</title>
+    <link href="https://cdn.jsdelivr.net/gh/anshooarora/chaintest@976b9706b4d752a6262a041a68a6ea08012e0fcf/cdn/simple/version/chaintest-pkg.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <style></style>
+</head>
+
+<body data-bs-theme="dark">
+  <nav class="navbar border-bottom">
+    <div class="container d-flex justify-content-between">
+      <div>
+        <a class="navbar-brand" href="#">ChainTest</a>
+        <span class="ms-3 fs-6">SwagLabHybridFrameworkJuly25</span>
+      </div>
+      <div>
+        <span class="badge badge-outline text-lg"><i class="bi bi-hourglass me-1"></i> 1m 14s</span>
+        <span class="badge badge-outline text-lg"><i class="bi bi-clock me-1 text-success"></i> 2026-01-04 08:01:04 am</span>
+        <span class="badge badge-outline text-lg me-3"><i class="bi bi-clock me-1 text-danger"></i> 2026-01-04 08:02:18 am</span>
+          <button role="button" id="sys-info" class="btn btn-outline-primary smaller" title="View System Info">
+            <i class="bi bi-pc-display-horizontal"></i></button>
+        <button role="button" id="shortcuts" class="btn btn-outline-primary smaller" title="Shortcuts">
+          <i class="bi bi-info-circle"></i></button>
+      </div>
+    </div>
+  </nav>
+
+  <div id="summary" class="container-fluid bg-body-tertiary">
+    <!-- dashboard section -->
+    <div id="dashboard" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card card-custom" style="height: 175px">
+              <div class="card-header">
+                Suites
+              </div>
+              <div class="card-body d-flex justify-content-center" style="height: 90px;">
+                <div class="chart-view center" style="margin-left: -1rem;">
+                  <canvas id="stats1"></canvas>
+                </div>
+              </div>
+              <div class="card-footer small">
+                <span id="sp1">1</span> Passed,
+                <span id="sf1">0</span> Failed,
+                <span id="ss1">0</span> Skipped
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card card-custom" style="height: 175px">
+              <div class="card-header">
+                Classes
+              </div>
+              <div class="card-body d-flex justify-content-center" style="height: 90px;">
+                <div class="chart-view center" style="margin-left: -1rem;">
+                  <canvas id="stats2"></canvas>
+                </div>
+              </div>
+              <div class="card-footer small">
+                <span id="sp2">5</span> Passed,
+                <span id="sf2">0</span> Failed,
+                <span id="ss2">0</span> Skipped
+              </div>
+            </div>
+          </div>
+            <div class="col-4">
+              <div class="card card-custom" style="height: 175px">
+                <div class="card-header">
+                  Methods
+                </div>
+                <div class="card-body d-flex justify-content-center" style="height: 90px;">
+                  <div class="chart-view center" style="margin-left: -1rem;">
+                    <canvas id="stats3"></canvas>
+                  </div>
+                </div>
+                <div class="card-footer small">
+                  <span id="sp3">16</span> Passed,
+                  <span id="sf3">0</span> Failed,
+                  <span id="ss3">0</span> Skipped
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- /dashboard section -->
+
+    <!-- tag section -->
+    <!-- /tag section -->
+  </div>
+
+  <div class="container-fluid">
+    <div class="py-3 mb-5">
+      <div class="container d-flex justify-content-between">
+        <div class="input-group">
+          <input type="text" id="q" class="form-control border" placeholder="Search..." aria-label="Search...">
+          <button class="btn border btn-sm text-success status-filter" id="passed" type="button">Passed</button>
+          <button class="btn border btn-sm text-warning status-filter" id="skipped" type="button">Skipped</button>
+          <button class="btn border btn-sm text-danger status-filter" id="failed" type="button">Failed</button>
+          <button id="clear-filters" class="btn border btn-sm"><i class="bi bi-x-lg me-1"></i>Clear all filters</button>
+          <button type="button" id="summary-toggle" class="btn border btn-sm"><i class="bi bi-toggle-on me-1"></i> Toggle Summary Section</button>
+        </div>
+      </div>
+    </div>
+      <div class="test-container passed">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h6 class="mb-3 testname fs-6 passed">Suite</h6>
+              <div class="small">
+                <span class="badge badge-outline"><i class="bi bi-hourglass me-1"></i> 1m 12s</span>
+                <span class="badge text-bg-info"><i class="bi bi-clock me-1"></i>
+                  2026-01-04 08:01:05 am</span>
+                <span class="badge text-bg-warning"><i class="bi bi-clock me-1"></i>
+                  2026-01-04 08:02:18 am</span>
+              </div>
+              
+            </div>
+            <div class="col-8">
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">com.SwagLabs.UITest.TestCases.Tc1_LoginTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">10s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf passed pb-1 logs-toggle">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">verifyUrl <i role="button" class="bi bi-caret-down-fill text-muted small"></i></span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">27ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="mt-3 logs d-none">
+          <pre class="pb-0">
+Url verified....
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/b43f6ca7-37f8-45eb-9011-7c24f2a2b480.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 logs-toggle">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">verifyTitle <i role="button" class="bi bi-caret-down-fill text-muted small"></i></span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">15ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="mt-3 logs d-none">
+          <pre class="pb-0">
+Title verified....
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/18c1d077-adf2-4e1a-8632-03ce0165bc72.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 logs-toggle">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateLogin <i role="button" class="bi bi-caret-down-fill text-muted small"></i></span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">390ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="mt-3 logs d-none">
+          <pre class="pb-0">
+Login completed....
+          </pre>
+        </div>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/16f440e7-9c3b-4b0a-ab91-837d3daf3e30.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">com.SwagLabs.UITest.TestCases.Tc2_InventoryTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">11s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateProductCount </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">31ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/c061dece-bd8e-4552-b8d2-c29c3fb1b0cd.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateProductDetails </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">79ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/efe67cd4-23ec-4069-bd0d-83f614105a63.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateAddToCartFeature </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">216ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/93b64e0a-e75b-404d-8ab4-db80528d6b41.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateCartPageLaunch </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">94ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/d68d2bca-2708-4fc8-a05a-904042e0c70f.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">com.SwagLabs.UITest.TestCases.Tc3_CartTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">16s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">verifyCartProductCount </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">15ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/d50c0bcc-aabf-44ca-bab8-c5ab8e9eff4f.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateProductRemoveFeature </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">64ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/df0dc790-b8ec-4235-9cee-d0bc756cd504.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateContinueShopping </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">282ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/54a7cb1b-cfa7-43dd-a4aa-9e46fa2b801b.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateCheckoutOption </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">106ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/182c9c1a-f3eb-4ab7-b605-27351b2be33d.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">com.SwagLabs.UITest.TestCases.Tc4_CheckoutTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">16s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateCheckoutWithoutData </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">337ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/d22e54bc-6860-44bb-9658-46c7616eee54.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateCancelProcess </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">147ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/01d713e3-13c8-4387-9639-5d7bc73e2f9f.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateCheckoutWithData </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">314ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/cfa247a8-609e-465f-95df-a1047f7adbea.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
+                <div class="card mb-3 result passed">
+                  <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                      <div>
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                        <span class="fs-6 ms-2">com.SwagLabs.UITest.TestCases.Tc5_OverviewTest</span>
+                      </div>
+                      <div>
+                        <span class="badge text-dark bg-light">16s</span>
+                      </div>
+                    </div>
+                    
+  <div class="mt-3 border-top">
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">verifyPayment </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">81ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/02c46a84-3abd-4221-858c-36901b940e71.png" />
+            </div>
+        </div>
+    </div>
+    <div class="leaf passed pb-1 ">
+      <div class="d-flex justify-content-between mt-3">
+        <div>
+            <i class="bi bi-check-circle-fill text-success"></i>
+          <span class="fs-6 ms-2">validateCheckout </span>
+        </div>
+        <div>
+          <span class="badge text-dark bg-light">202ms</span>
+        </div>
+      </div>
+      <p class="desc"></p>
+        <div class="row mt-3">
+            <div class="embed col-2 mb-1">
+              <img src="resources/f13851b7-60b1-4628-bb6b-398a56c850a7.png" />
+            </div>
+        </div>
+    </div>
+  </div>
+
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+          <div class="border-bottom py-5"></div>
+      </div>
+  </div>
+
+  <script>
+    const stats1Annotation = {'total': 1, 'passed': 1};
+    const stats1 = [
+      { result: 'Passed', count: 1, bg: 'rgb(140, 197, 83)' },
+      { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+      { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
+    ];
+      const stats2Annotation = {'total': 5, 'passed': 5};
+      const stats2 = [
+        { result: 'Passed', count: 5, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
+      ];
+      const stats3Annotation = {'total': 16, 'passed': 16};
+      const stats3 = [
+        { result: 'Passed', count: 16, bg: 'rgb(140, 197, 83)' },
+        { result: 'Failed', count: 0, bg: 'rgb(233,80,113)' },
+        { result: 'Skipped', count: 0, bg: 'rgb(13, 202, 240)' }
+      ];
+     
+  </script>
+    <script src="https://cdn.jsdelivr.net/gh/anshooarora/chaintest@976b9706b4d752a6262a041a68a6ea08012e0fcf/cdn/simple/version/chaintest-pkg.js"></script>
+
+    <div id="sys-info-modal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h6 class="modal-title">System</h6>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+              onclick="toggleSysInfo(false)"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <tbody>
+                  <tr>
+                    <td>java.version</td>
+                    <td>21.0.6</td>
+                  </tr>
+                  <tr>
+                    <td>java.vm.name</td>
+                    <td>OpenJDK 64-Bit Server VM</td>
+                  </tr>
+                  <tr>
+                    <td>java.vm.vendor</td>
+                    <td>Eclipse Adoptium</td>
+                  </tr>
+                  <tr>
+                    <td>java.class.version</td>
+                    <td>65.0</td>
+                  </tr>
+                  <tr>
+                    <td>java.runtime.name</td>
+                    <td>OpenJDK Runtime Environment</td>
+                  </tr>
+                  <tr>
+                    <td>os.name</td>
+                    <td>Windows 11</td>
+                  </tr>
+                  <tr>
+                    <td>os.arch</td>
+                    <td>amd64</td>
+                  </tr>
+                  <tr>
+                    <td>os.version</td>
+                    <td>10.0</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+              onclick="toggleSysInfo(false)">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div id="info-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">ChainTest Simple Generator - Shortcuts</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            onclick="toggleInfoModal(false)"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <tbody>
+                <tr>
+                  <td>p</td>
+                  <td>Toggle passed tests</td>
+                </tr>
+                <tr>
+                  <td>s</td>
+                  <td>Toggle skipped tests</td>
+                </tr>
+                <tr>
+                  <td>esc</td>
+                  <td>Reset all filters</td>
+                </tr>
+                <tr>
+                  <td>L</td>
+                  <td>Toggle theme (light/dark)</td>
+                </tr>
+                <tr>
+                  <td>f</td>
+                  <td>Toggle failed tests</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            onclick="toggleInfoModal(false)">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="attachment-modal" class="modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Attachment</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            onclick="toggleAttachmentModal(false)"></button>
+        </div>
+        <div class="modal-body">
+          <img src="" />
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"
+            onclick="toggleAttachmentModal(false)">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 <listeners>
-<listener class-name="com.testListeners.ExtentITestListner"></listener>
+<!-- <listener class-name="com.testListeners.ExtentITestListner"></listener>-->
+<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"></listener>
 </listeners>
   <test thread-count="5" name="Test">
   <parameter name="bname" value="edge"></parameter>

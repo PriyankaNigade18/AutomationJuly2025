@@ -1,11 +1,17 @@
 package com.SwagLabs.UITest.Base;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.io.FileHandler;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -16,7 +22,7 @@ import com.SwagLabs.UITest.Pages.*;
 import com.SwagLabs.UITest.Utility.BrowserProvider;
 import com.SwagLabs.UITest.Utility.ExcelUtil;
 import com.SwagLabs.UITest.Utility.PropertiesUtil;
-
+import com.aventstack.chaintest.plugins.ChainTestListener;
 public class BaseClass 
 {
 	public WebDriver driver;
@@ -41,6 +47,7 @@ public class BaseClass
 //		default:System.out.println("Wrong Browser "+bname+" I will start with default edge browser");
 //		driver=new EdgeDriver();
 //		}
+		ChainTestListener.log("Driver session started.....");
 		prop=new PropertiesUtil();
 		driver=BrowserProvider.setDriver(bname);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -69,11 +76,33 @@ public class BaseClass
 	public void testWait()
 	{
 		addWait();
+		
+	}
+	@AfterMethod
+	public void getScreenshot(ITestResult result)
+	{
+		TakesScreenshot ts=(TakesScreenshot) driver;
+		
+		//report 
+		byte arr[]=ts.getScreenshotAs(OutputType.BYTES);
+		ChainTestListener.embed(arr,"image/png");
+		
+		//local
+		File temp=ts.getScreenshotAs(OutputType.FILE);
+		File dest=new File(System.getProperty("user.dir")+"//Screenshots//"+result.getName()+".png");
+		
+		try {
+			FileHandler.copy(temp,dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 	@AfterClass
 	public void tearDown()
 	{
+		ChainTestListener.log("Session closed!");
 		driver.quit();
 	}
 
