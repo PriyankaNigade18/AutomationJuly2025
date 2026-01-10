@@ -1,10 +1,13 @@
 package com.Cucumber.Stepdef;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -36,6 +39,28 @@ public class SwaglabsSteps {
 		
 		Assert.assertTrue(driver.getCurrentUrl().contains("inventory"),"Login Failed!");
 		System.out.println("Login Completed!");
+	}
+
+	@When("user enter required username and password")
+	public void user_enter_required_username_and_password(DataTable dataTable) {
+	    // Write code here that turns the phrase above into concrete actions
+	    // For automatic transformation, change DataTable to one of
+	    // E, List<E>, List<List<E>>, List<Map<K,V>>, Map<K,V> or
+	    // Map<K, List<V>>. E,K,V must be a String, Integer, Float,
+	    // Double, Byte, Short, Long, BigInteger or BigDecimal.
+	    //
+	    // For other transformations you can register a DataTableType.
+
+		List<List<String>> data=dataTable.cells();
+		driver.findElement(By.cssSelector("#user-name")).sendKeys(data.get(0).get(0));
+		driver.findElement(By.cssSelector("#password")).sendKeys(data.get(0).get(1));
+		
+		
+		
+		
+		
+		
+		
 	}
 
 
