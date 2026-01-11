@@ -7,7 +7,9 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features="src/test/resources/FeatureFiles/HrmDDT.feature",
-					glue={"com.Cucumber.Stepdef"})
+					glue={"com.Cucumber.Stepdef"},
+					publish=true,
+					plugin={"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"})
 public class HRMRunner {
 
 }
